@@ -23,7 +23,7 @@ def determineWinner(user_input, computer_input):
         else:
             return "User wins!"
 
-def main():
+def initialise():
     valid_options = ["rock", "paper", "scissors"]
     rounds = 0
     score = 0
@@ -49,6 +49,8 @@ def main():
         if play_again != "yes":
             print(f"Game over! You played {rounds} rounds and won {score} rounds.")
             break
+def main():
+    initialise()
 
 if __name__ == "__main__":
     main()
